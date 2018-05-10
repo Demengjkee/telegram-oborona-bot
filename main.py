@@ -37,7 +37,7 @@ def ooo_inline(bot, update):
     update.inline_query.answer([InlineQueryResultArticle(
                 id=uuid4(),
                 title="OBORONA",
-                input_message_content=InputTextMessageContent(gen_oborona_resp()))])
+                input_message_content=InputTextMessageContent(gen_oborona_resp()))], cache_time=1)
 
 def main():
     token = ""
